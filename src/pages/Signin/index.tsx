@@ -1,10 +1,22 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Image } from 'react-native';
+
+import Illustration from '../../assets/illustration3.png'
+import { Container, Content, Title, SubTitle } from './styles';
 
 export function Signin(){
     return(
-        <View>
-            <Text>SignIn</Text>
-        </View>
+        <Container>
+            <Image source={Illustration}/>  
+            <Content>
+            <Title>
+                Organizador {'\n'}
+                de Partidas {'\n'}
+            </Title>   
+            <SubTitle>
+                Criar grupos para jogar com amigos{'\n'}
+            </SubTitle>
+            </Content>
+        </Container>
     )
 }
