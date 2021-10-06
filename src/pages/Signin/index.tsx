@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import {  Image, StatusBar } from 'react-native';
 
 import Illustration from '../../assets/illustration3.png'
 import { Container, Content, Title, SubTitle } from './styles';
 
 export function Signin(){
     return(
+        <>
         <Container>
+            <StatusBar barStyle='light-content' backgroundColor='transparent' translucent={true} />
             <Image source={Illustration}/>  
             <Content>
             <Title>
@@ -18,5 +20,7 @@ export function Signin(){
             </SubTitle>
             </Content>
         </Container>
+        
+        </>
     )
 }
