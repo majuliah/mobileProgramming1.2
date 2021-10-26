@@ -21,7 +21,12 @@ export function Signin(){
                 Criar grupos para jogar com amigos{'\n'}
             </SubTitle>
             
-            <ButtonIcon />
+            <ButtonIcon 
+            title="LogIn Discord"
+            course="SI"
+            activeOpacity={0.7}
+            disabled={false}
+            />
 
             </Content>
         </Container>

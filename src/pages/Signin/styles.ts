@@ -11,7 +11,9 @@ export const Container = styled.View`
 `;
 
 export const Content = styled.View`
-    margin-top: -30px;
+    margin-top: -40px;
+    padding: 50px;
+    
 
 `;
 
