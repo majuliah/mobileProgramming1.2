@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components/native';
 import { Signin } from './src/pages/Signin';
 import { theme } from './src/global/styles/theme';
 import { Background } from './src/components/Background';
+import { Home } from './src/pages/Home';
 
 
 
@@ -20,7 +21,7 @@ export default function App() {
     <Background>
     <StatusBar barStyle='light-content' background-color='transparent' translucent={true}/>
     <ThemeProvider theme={theme}>
-      <Signin />
+      <Home />
     </ThemeProvider>
     </Background>
   );
