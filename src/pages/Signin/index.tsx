@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { Image } from 'react-native';
 
 import Illustration from '../../assets/illustration3.png'
@@ -6,6 +7,12 @@ import { ButtonIcon } from '../../components/ButtonIcon';
 import { Container, Content, Title, SubTitle } from './styles';
 
 export function Signin(){
+    const navigation = useNavigation();
+    
+    function handleSignin(){
+        navigation.navigate('Home')
+
+    }
     return(
         <>
         <Container>
@@ -25,6 +32,8 @@ export function Signin(){
             course="SI"
             activeOpacity={0.7}
             disabled={false}
+            onPress={handleSignin}
+            
             />
 
             </Content>
